@@ -1,0 +1,36 @@
+{
+  "electricity_rates": {
+    "peak_hours": {
+      "start_time": "16:00",
+      "end_time": "20:00",
+      "rate_per_kwh": 0.25,
+      "mining_enabled": false
+    },
+    "off_peak_hours": {
+      "start_time": "22:00",
+      "end_time": "06:00",
+      "rate_per_kwh": 0.08,
+      "mining_enabled": true
+    },
+    "standard_hours": {
+      "rate_per_kwh": 0.15,
+      "mining_enabled": true
+    }
+  },
+  "mining_schedule": {
+    "auto_start": true,
+    "auto_stop": true,
+    "profit_threshold": 0.05,
+    "temperature_override": true
+  },
+  "hardware_settings": {
+    "power_consumption_watts": 350,
+    "target_profit_per_day": 5.00,
+    "electricity_cost_limit": 0.20
+  },
+  "notifications": {
+    "schedule_changes": true,
+    "profit_alerts": true,
+    "cost_warnings": true
+  }
+}
