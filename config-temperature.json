@@ -1,0 +1,33 @@
+{
+  "thresholds": {
+    "warning_cpu": 80,
+    "critical_cpu": 90,
+    "warning_gpu": 85,
+    "critical_gpu": 95,
+    "check_interval": 5
+  },
+  "actions": {
+    "warning_alert": true,
+    "critical_shutdown": true,
+    "email_notifications": false,
+    "desktop_notifications": true
+  },
+  "logging": {
+    "enabled": true,
+    "log_file": "logs/temperature.log",
+    "max_log_size": 10485760,
+    "retention_days": 30
+  },
+  "hardware": {
+    "cpu_monitoring": true,
+    "gpu_monitoring": true,
+    "motherboard_monitoring": false,
+    "custom_sensors": []
+  },
+  "emergency": {
+    "shutdown_enabled": true,
+    "shutdown_delay": 30,
+    "backup_before_shutdown": true,
+    "restart_after_cooldown": false
+  }
+}
