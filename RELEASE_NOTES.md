@@ -15,4 +15,4 @@
 - Mining profiles
 - Advanced alerts
 - Automated backups
-- Full documentation including setup, tuning, and troubleshooting guides
+- Full documentation including setup, tuning, and troubleshooting guides.
