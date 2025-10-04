@@ -1,0 +1,32 @@
+{
+  "miners": [
+    {
+      "name": "XMRig",
+      "executable": "xmrig.exe",
+      "working_directory": "miners/xmrig",
+      "api_port": 8080,
+      "restart_delay": 10,
+      "max_restarts_per_hour": 5
+    },
+    {
+      "name": "T-Rex",
+      "executable": "t-rex.exe",
+      "working_directory": "miners/t-rex",
+      "api_port": 4067,
+      "restart_delay": 15,
+      "max_restarts_per_hour": 5
+    }
+  ],
+  "monitoring": {
+    "check_interval": 30,
+    "api_timeout": 5,
+    "health_check_enabled": true,
+    "log_file": "logs/watchdog.log"
+  },
+  "notifications": {
+    "restart_alerts": true,
+    "failure_alerts": true,
+    "email_enabled": false,
+    "webhook_url": ""
+  }
+}
